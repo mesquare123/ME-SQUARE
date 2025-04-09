@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ME SQUARE - Shop the Chic Way</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #fff5f8;
+      color: #333;
+    }
+    header {
+      background-color: #ff85a2;
+      color: beige;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      background-color: #ffd4e1;
+      padding: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #6a1b4d;
+      font-weight: 600;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1617055821766-65955b1a36fc');
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: beige;
+      text-shadow: 2px 2px 4px #00000080;
+      font-size: 2.5rem;
+      padding: 20px;
+      text-align: center;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .product {
+      background: beige;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+    .product h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .product p {
+      color: #777;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    .product button {
+      background-color: #ff85a2;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #6a1b4d;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+   ME SQUARE
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="hero">
+    Elevate Your Style with ME SQUARE
+  </div>
+  <section class="section" id="shop">
+    <h2>Featured Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1618354691325-5505c3554ad4" alt="Perfume">
+        <h3>Me Square Signature Perfume</h3>
+        <p>$45.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1600181954230-1d3f14a29cf5" alt="Body Spray">
+        <h3>Luxury Body Spray</h3>
+        <p>$25.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1628576820016-22c44e8612b3" alt="Roll-on">
+        <h3>Silky Smooth Roll-On</h3>
+        <p>$15.00</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="about">
+    <h2>About ME SQUARE</h2>
+    <p>At ME SQUARE, we blend luxury, elegance, and bold fragrances to empower your everyday vibe. Our products are designed to make you feel fabulous, always.</p>
+  </section>
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: hello@mesquare.com | Instagram: @mesquarebeauty</p>
+  </section>
+  <footer>
+    &copy; 2025 ME SQUARE. All rights reserved.
+  </footer>
+</body>
+</html>
